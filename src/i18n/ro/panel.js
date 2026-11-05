@@ -1,0 +1,61 @@
+// Rumano: textos del área «panel».
+export default {
+  title: 'Panou',
+  subtitle: 'Rezumatul proiectelor de dezvoltare Safety',
+  subtitleAsOf: 'Situația la {date}',
+  empty: {
+    title: 'Nu există proiecte cu aceste filtre',
+    adminHint: 'Creați un proiect din Listă sau încărcați datele inițiale din Setări.',
+    userHint: 'Încercați să eliminați filtrele.',
+  },
+  kpis: {
+    ariaLabel: 'Indicatori',
+    activeProjects: 'Proiecte active',
+    ofSelection: 'din {total} în selecție',
+    projects_one: 'proiect',
+    projects_few: 'proiecte',
+    projects_other: 'de proiecte',
+    overdueActions: 'Acțiuni restante',
+    ofOpen: 'din {total} deschise',
+    budget: 'Planificat vs real',
+    actual: 'real {amount}',
+    actualPct: 'real {amount} ({pct} %)',
+  },
+  phases: {
+    title: 'Proiecte pe fază',
+    hint: 'clic pentru a vedea lista',
+    barAria_one: '{camino}, {fase}: {count} proiect',
+    barAria_few: '{camino}, {fase}: {count} proiecte',
+    barAria_other: '{camino}, {fase}: {count} de proiecte',
+  },
+  families: {
+    title: 'Semafor și familii',
+    empty: 'Fără proiecte.',
+    barAria_one: '{family}: {count} proiect',
+    barAria_few: '{family}: {count} proiecte',
+    barAria_other: '{family}: {count} de proiecte',
+  },
+  upcoming: {
+    title: 'Date apropiate',
+    horizon: '60 de zile',
+    empty: 'Nimic în următoarele 60 de zile',
+    groups: {
+      semana: 'Următoarele 7 zile',
+      mes: 'Următoarele 30 de zile',
+      despues: 'Mai târziu',
+    },
+    types: {
+      proyecto: 'Proiect',
+      fase: 'Fază',
+      accion: 'Acțiune',
+    },
+  },
+  overdue: {
+    title: 'Acțiuni restante',
+    empty: 'Nu există acțiuni restante',
+    noOwner: 'Fără responsabil',
+    daysLate_one: '{count} zi întârziere',
+    daysLate_few: '{count} zile întârziere',
+    daysLate_other: '{count} de zile întârziere',
+  },
+};
