@@ -4,7 +4,7 @@ import { capturePortalOrigin, getPortalUrl } from './portalUrl.js';
 const AUTH_ENTRY_KEY = 'portal_auth_entry';
 const AUTH_ENTRY_APPHUB = 'apphub';
 const AUTH_ENTRY_PORTAL = 'portal';
-const APP_ID = 38;
+const APP_ID = 40;
 
 let appViewRecorded = false;
 

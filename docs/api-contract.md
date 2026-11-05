@@ -6,7 +6,7 @@ Lógica pura y validadores: `backend/src/modules/safetyDev/safetyDev.domain.js` 
 
 ## 0. Convenciones
 
-- Base: `/api/safety-dev`. Todas las rutas con `authRequired` + `requireAppAccess(38)` (token del portal en `Authorization: Bearer …`).
+- Base: `/api/safety-dev`. Todas las rutas con `authRequired` + `requireAppAccess(40)` (token del portal en `Authorization: Bearer …`).
   Sin token → 401 (middleware del portal); sin acceso a la app → 403 (middleware del portal).
 - JSON en **camelCase**; BD en **snake_case**. La conversión fila → JSON se hace con `domain.toApi(entity, row)`; la entrada se valida con
   `domain.validateX(body, opts)` que devuelve `{ ok, errors, value }` con `value` en columnas de BD.
@@ -48,7 +48,7 @@ acciones abiertas: `pendiente`/`enviado`), y
 | `project` (datos generales), `phases` (fechas), `products`, `deliverables`, `actions`, `projectSuppliers`, `quotes`, `budget`, `certifications`, `documents` | ✔ | ✔ (solo sus proyectos) | — |
 
 Lectura (todos los GET, descarga de documentos y `/export`): cualquier usuario con acceso a la app.
-`isAppAdmin` = `findAppAdminFlag(req.user.id, users.role_id, 38)` (patrón de `calculadoraPva.routes.js`).
+`isAppAdmin` = `findAppAdminFlag(req.user.id, users.role_id, 40)` (patrón de `calculadoraPva.routes.js`).
 
 ---
 

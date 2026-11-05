@@ -32,15 +32,15 @@ Sigue el patrón de las subapps del portal (ver `client/AGENTS.md`):
 |---|---|---|
 | Frontend | `apps/safety-desarrollo/` (repo propio) | React 19 + Vite 6, JS/JSX, `base: '/safety-desarrollo/'`, puerto dev **4039** (4033 lo usa ya el Especialista en Safety) |
 | Backend | `backend/src/modules/safetyDev/` | Express, router montado en `/api/safety-dev` |
-| SQL | `backend/changes/db/2026-10-29_safety-desarrollo.sql` | registro de la app **APP_ID 38** + tablas `safety_dev_*` + permisos por rol |
+| SQL | `backend/changes/db/2026-10-29_safety-desarrollo.sql` | registro de la app **APP_ID 40** + tablas `safety_dev_*` + permisos por rol |
 | Proxy dev | `client/devAppPorts.js` | añadir `'/safety-desarrollo': 4039` (solo esa línea) |
 | Ficheros subidos | `backend/uploads/safety-dev/<projectId>/` | servidos solo por la API con permiso |
 
-Autenticación: `usePortalAuth` (copiado de `apps/calculadora-pva/src/usePortalAuth.ts`, APP_ID 38) y en backend
-`authRequired` + `requireAppAccess(38)`; admin de app con `findAppAdminFlag`.
+Autenticación: `usePortalAuth` (copiado de `apps/calculadora-pva/src/usePortalAuth.ts`, APP_ID 40) y en backend
+`authRequired` + `requireAppAccess(40)`; admin de app con `findAppAdminFlag`.
 
 Registro de la app: nombre «Safety Desarrollo», descripción «Seguimiento de diseño, homologación y aprovisionamiento de nuevos productos Safety»,
-icono 🦺, url `/safety-desarrollo/`, color `#2E7D32` (verde Safety del Especialista), sort_order 38; permisos role 1 admin, roles 2 y 3 acceso sin admin.
+icono 👷, url `/safety-desarrollo/`, color `#2E7D32` (verde Safety del Especialista), sort_order 40; permisos role 1 admin, roles 2 y 3 acceso sin admin.
 
 ## 4. Dominio
 
